@@ -1,6 +1,7 @@
 .attribution { font-size: 11px; text-align: center; padding-top: 10px;}
 .attribution a { color: hsl(228, 45%, 44%); }
 body{
+    font-family: 'Hanken Grotesk', sans-serif;
     padding: 0px;
     margin: 0px;
     height: 100vh;
@@ -9,8 +10,12 @@ body{
     justify-content: center;
     align-items: center;
 }
+p{
+    display: inline-flex;
+}
 .Board{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -206,5 +211,47 @@ img{
     width: 30px;
     height:30px;
 }
-
+@media(max-width:400px){
+    body{
+        display: flex;
+    }
+    .Board{
+        display: flex;
+        flex-direction:column;
+    }
+    .Result h1{
+        padding-bottom: 20px;
+        font-size: 60px;
+        color: white;
+        z-index: 1;
+    }
+    .circle-container{
+        font-size: 15px;
+        position: absolute;
+        top: 60px;
+        z-index: 1;
+        text-align: center;
+    }
+    .Result::before {
+        content: "";
+        position: absolute;
+        top: 70px; /* Adjust this value to move the circle up/down */
+        width: 150px; /* Adjust the size of the circle */
+        height: 150px; /* Adjust the size of the circle */
+        background: linear-gradient(180deg,hsl(241, 72%, 46%,1)0%,hsla(256, 72%, 46%, 0)100%);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        flex: wrap;
+    }
+    .Result h2{
+        position: relative;
+        top: 50px;
+        font-size: large;
+        margin-bottom: 40px;
+    }
+}
 
