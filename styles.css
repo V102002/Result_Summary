@@ -1,0 +1,210 @@
+.attribution { font-size: 11px; text-align: center; padding-top: 10px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Result{
+    border-radius: 7%;
+    height: 500px;
+    width: 350px;
+    background:linear-gradient(180deg,hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color:  hsl(241, 100%, 89%);
+}
+.Result::before {
+    content: "";
+    position: absolute;
+    top: 320px; /* Adjust this value to move the circle up/down */
+    width: 200px; /* Adjust the size of the circle */
+    height: 200px; /* Adjust the size of the circle */
+    background: linear-gradient(180deg,hsl(241, 72%, 46%,1)0%,hsla(256, 72%, 46%, 0)100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Result h1{
+    padding-bottom: 0px;
+    font-size: 80px;
+    color: white;
+    z-index: 1;
+}
+.Result h4{
+    position: relative;
+    bottom: 55px;
+}
+.Result h3{
+    position: relative;
+    top: 190px;
+    font-size: 30px;
+}
+.Result h2{
+    position: relative;
+    bottom: 20px;
+    
+}
+.Result p{
+    position: relative;
+    top: 57px;
+    text-align: center;
+    margin: 120px 0;
+    color: hsl(241, 100%, 89%);
+    word-wrap: break-word;
+    z-index: 1;
+}
+.circle-container{
+    font-size: 20px;
+    position: absolute;
+    top: 310px;
+    z-index: 1;
+    text-align: center;
+}
+span{
+    color: white;
+}
+/*Now the summary side*/
+.Summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 50px;
+    border-radius: 7%;
+    height: 470px;
+    width: 350px;
+    padding-bottom: 30px;
+    background-color: rgb(255, 255, 255);
+    gap: 10px;
+}
+.Summary>*{
+    display: inline-flex;
+    width: 78%;
+    height: 60px;
+    border-radius: 15px;
+    padding-left: 60px;
+    gap: 92px;
+}
+.Summary h2{
+    align-self: flex-start;
+    padding-left: 5px;
+    margin-bottom: 1px;
+    margin-right: 25px;
+    height:8%;
+}
+#Reaction{
+    display: inline-flex;
+    background-color: hsl(0, 100%, 97%);
+    width: 99%;
+    padding: 1px;
+    padding-bottom: 10px;
+}
+.reaction{
+    margin: auto;
+    margin-left: -80px;
+    color: hsl(0, 100%, 67%);
+}
+.hun{
+    margin: 20px;
+    font-size: large;
+}
+.total{
+    color: grey;
+}
+
+#Memory{
+    display: inline-flex;
+    background-color: hsl(39, 100%, 97%);
+    width: 99%;
+    padding: 1px;
+    padding-bottom: 10px;
+}
+.memory{
+    margin: auto;
+    margin-left: -80px;
+    color: hsl(39, 100%, 56%);
+}
+.mem{
+    margin: 20px;
+    font-size: large;
+}
+.total{
+    color: grey;
+}
+
+#Verbal{
+    display: inline-flex;
+    background-color: hsl(166, 100%, 97%);
+    width: 99%;
+    padding: 1px;
+    padding-bottom: 10px;
+}
+.verbal{
+    margin: auto;
+    margin-left: -80px;
+    color: hsl(166, 100%, 37%);
+}
+.ver{
+    margin: 20px;
+    font-size: large;
+}
+.total{
+    color: grey;
+}
+
+#Visual{
+    display: inline-flex;
+    background-color: hsl(234, 85%, 97%);
+    width: 99%;
+    padding: 1px;
+    padding-bottom: 10px;
+}
+.visual{
+    margin: auto;
+    margin-left: -80px;
+    color: hsl(234, 85%, 45%);
+}
+.vis{
+    margin: 20px;
+    font-size: large;
+}
+.total{
+    color: grey;
+}
+
+#Continue{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 12px;
+    color: white;
+    border-radius: 30px;
+    height: 50px;
+    width: 82%;
+    background-color: hsl(224, 30%, 27%);
+}
+#Continue h3{
+    padding-right: 50px;
+}
+img{
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 30px;
+    height:30px;
+}
+
+
