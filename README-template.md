@@ -8,13 +8,10 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+  - [Author](#author)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -33,11 +30,7 @@ Users should be able to:
 ![](./Screenshot%202024-06-18%20at%2018-47-04%20Frontend%20Mentor%20Results%20summary%20component.png)
 
 ### Links
-
-
-
-## My process
-
+Live Site: https://v102002.github.io/Result_Summary/
 ### Built with
 
 - Semantic HTML5 markup
